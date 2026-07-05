@@ -420,6 +420,7 @@ h3 {
 }
 
 .story-band,
+.concept-gallery,
 .environment,
 .contact-panel {
   width: min(1240px, calc(100% - 32px));
@@ -457,6 +458,76 @@ h3 {
 
 .value-grid p {
   color: var(--muted);
+}
+
+.concept-gallery {
+  border-top: 1px solid rgba(35, 72, 58, 0.18);
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.72fr);
+  grid-template-rows: repeat(2, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.concept-card {
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--ink);
+  box-shadow: 0 18px 46px rgba(33, 48, 38, 0.13);
+}
+
+.concept-card-large {
+  grid-row: span 2;
+}
+
+.concept-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.concept-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(to top, rgba(18, 22, 18, 0.76), rgba(18, 22, 18, 0.08) 58%, transparent);
+}
+
+.concept-card div {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 1;
+  color: white;
+}
+
+.concept-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.76rem;
+  font-weight: 820;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.concept-card h3 {
+  max-width: 22ch;
+  margin-bottom: 0;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  line-height: 1.06;
+}
+
+.concept-card:hover img {
+  transform: scale(1.035);
 }
 
 .environment {
@@ -582,8 +653,17 @@ h3 {
 
   .plan-layout,
   .value-grid,
+  .concept-grid,
   .location-strip {
     grid-template-columns: 1fr;
+  }
+
+  .concept-grid {
+    grid-template-rows: none;
+  }
+
+  .concept-card-large {
+    grid-row: auto;
   }
 
   .plan-stage,

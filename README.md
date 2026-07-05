@@ -7,6 +7,7 @@ Demo inicial de una ficha inmobiliaria inmersiva para presentar propiedades con 
 - Portada comercial de la propiedad
 - Exploracion por planos de planta baja y alta
 - Hotspots con detalle por ambiente
+- Visualizaciones conceptuales del interior basadas en plano
 - Mensajes de WhatsApp generales y especificos por espacio
 - Seccion de entorno y llamada a la accion
 
@@ -17,6 +18,9 @@ Demo inicial de una ficha inmobiliaria inmersiva para presentar propiedades con 
 - `script.js`
 - `assets/planta-baja.jpg`
 - `assets/planta-alta.jpg`
+- `assets/conceptos/area-social.jpg`
+- `assets/conceptos/jardin-interior.jpg`
+- `assets/conceptos/habitacion-planta-baja.jpg`
 
 ## Ejecutar localmente
 
