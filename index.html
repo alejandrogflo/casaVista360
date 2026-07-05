@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Casa de las Flores | Experiencia Virtual</title>
+    <meta
+      name="description"
+      content="Ficha inmersiva de Casa de las Flores, una residencia en construcción ubicada en Ciudad Vieja, Sacatepéquez."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Casa de las Flores">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Casa de las Flores</span>
+      </a>
+      <nav class="topnav" aria-label="Secciones">
+        <a href="#planos">Planos</a>
+        <a href="#entorno">Entorno</a>
+        <a href="#contacto">Visita</a>
+      </nav>
+      <a class="nav-cta" data-whatsapp-general href="#contacto">Consultar</a>
+    </header>
+
+    <main id="inicio">
+      <section class="experience" aria-labelledby="property-title">
+        <div class="property-intro">
+          <p class="eyebrow">Residencial Las Flores · Ciudad Vieja</p>
+          <h1 id="property-title">Casa de las Flores</h1>
+          <p class="lead">
+            Residencia en construcción a 15 minutos de Antigua Guatemala, con 237 m2,
+            jardín interior, balcón y vista hacia los volcanes de Fuego y Acatenango.
+          </p>
+
+          <div class="intro-actions">
+            <a class="primary-action" data-whatsapp-general href="#contacto">Agendar visita</a>
+            <a class="secondary-action" href="#planos">Explorar planos</a>
+          </div>
+
+          <div class="quick-facts" aria-label="Datos principales">
+            <article>
+              <strong>237 m2</strong>
+              <span>Construcción</span>
+            </article>
+            <article>
+              <strong>2 niveles</strong>
+              <span>Distribución</span>
+            </article>
+            <article>
+              <strong>4 hab.</strong>
+              <span>Con baños privados</span>
+            </article>
+            <article>
+              <strong>2 autos</strong>
+              <span>Garage techado</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="plan-workbench" id="planos">
+          <div class="workbench-toolbar" aria-label="Selector de planta">
+            <button class="floor-tab is-active" type="button" data-floor="lower" aria-pressed="true">
+              Planta baja
+            </button>
+            <button class="floor-tab" type="button" data-floor="upper" aria-pressed="false">
+              Planta alta
+            </button>
+          </div>
+
+          <div class="plan-layout">
+            <div class="plan-stage" aria-label="Plano interactivo">
+              <img
+                id="planImage"
+                src="assets/planta-baja.jpg"
+                alt="Plano renderizado de la planta baja de Casa de las Flores"
+              />
+              <div id="hotspotLayer" class="hotspot-layer" aria-label="Ambientes de la propiedad"></div>
+            </div>
+
+            <aside class="space-panel" aria-live="polite" aria-label="Detalle del ambiente seleccionado">
+              <p class="panel-kicker" id="floorLabel">Planta baja</p>
+              <h2 id="spaceTitle">Garage techado</h2>
+              <p id="spaceDescription">
+                Entrada cómoda para dos vehículos, protegida y conectada directamente con el área social.
+              </p>
+              <dl class="space-meta">
+                <div>
+                  <dt>Ambiente</dt>
+                  <dd id="spaceType">Acceso</dd>
+                </div>
+                <div>
+                  <dt>Venta</dt>
+                  <dd id="spacePitch">Ideal para familias que reciben visitas o necesitan dos parqueos.</dd>
+                </div>
+              </dl>
+              <a class="panel-action" data-whatsapp-space href="#contacto">Preguntar por este espacio</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-band" aria-labelledby="why-title">
+        <div class="section-heading">
+          <p class="eyebrow">Por qué destaca</p>
+          <h2 id="why-title">Diseñada para vivir Antigua sin perder comodidad diaria.</h2>
+        </div>
+
+        <div class="value-grid">
+          <article>
+            <span class="value-number">01</span>
+            <h3>Ubicación con crecimiento</h3>
+            <p>
+              Ciudad Vieja conecta rápido con Antigua Guatemala, Escuintla y Chimaltenango,
+              manteniendo acceso a colegios, comercio y servicios esenciales.
+            </p>
+          </article>
+          <article>
+            <span class="value-number">02</span>
+            <h3>Arquitectura funcional</h3>
+            <p>
+              La habitación en planta baja con baño privado abre la casa a visitas,
+              adultos mayores o una oficina independiente.
+            </p>
+          </article>
+          <article>
+            <span class="value-number">03</span>
+            <h3>Luz, ventilación y jardín</h3>
+            <p>
+              El jardín interior ordena la experiencia de la casa: refresca, ilumina
+              y conecta los ambientes sociales con naturaleza.
+            </p>
+          </article>
+          <article>
+            <span class="value-number">04</span>
+            <h3>Vista a volcanes</h3>
+            <p>
+              La máster, el balcón, la terraza y la azotea aprovechan la vista hacia
+              Fuego y Acatenango para convertir la casa en experiencia.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="environment" id="entorno" aria-labelledby="environment-title">
+        <div class="section-heading">
+          <p class="eyebrow">Entorno</p>
+          <h2 id="environment-title">A 15 minutos de Antigua Guatemala.</h2>
+          <p>
+            Una ubicación pensada para quien quiere plusvalía, conexión regional y una vida más tranquila
+            cerca de naturaleza, colegios y servicios.
+          </p>
+        </div>
+
+        <div class="location-strip">
+          <article>
+            <strong>Antigua Guatemala</strong>
+            <span>15 min aprox.</span>
+          </article>
+          <article>
+            <strong>Escuintla</strong>
+            <span>Acceso regional</span>
+          </article>
+          <article>
+            <strong>Chimaltenango</strong>
+            <span>Conexión directa</span>
+          </article>
+          <article>
+            <strong>Servicios</strong>
+            <span>Colegios y comercio</span>
+          </article>
+        </div>
+
+        <a
+          class="map-link"
+          href="https://www.google.com/maps/search/?api=1&query=Residencial%20Las%20Flores%20Ciudad%20Vieja%20Sacatep%C3%A9quez"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ver zona en Google Maps
+        </a>
+      </section>
+
+      <section class="contact-panel" id="contacto" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Siguiente paso</p>
+          <h2 id="contact-title">Agenda una visita con contexto claro.</h2>
+          <p>
+            El comprador ya llega entendiendo la distribución, los ambientes clave y la propuesta de valor
+            de la propiedad.
+          </p>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <label>
+            <span>Nombre</span>
+            <input name="name" autocomplete="name" />
+          </label>
+          <label>
+            <span>Día ideal para visitar</span>
+            <input name="date" autocomplete="off" />
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="message" rows="4">Hola, vi Casa de las Flores y quiero agendar una visita.</textarea>
+          </label>
+          <button class="primary-action" type="submit">Preparar WhatsApp</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Casa de las Flores · Ciudad Vieja, Sacatepéquez</p>
+      <a data-whatsapp-general href="#contacto">Consultar propiedad</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
